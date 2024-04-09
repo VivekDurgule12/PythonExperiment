@@ -6,35 +6,11 @@ Problem Statements
 
 
 
-12. Write a Python program to check the validity of password input by users
-Validation :
- At least 1 letter between [a-z] and 1 letter between [A-Z].
- At least 1 number between [0-9].
- At least 1 character from [$#@].
- Minimum length 6 characters.
- Maximum length 16 characters.
 
 
 
-14. Write a Python program to print alphabet pattern 'L'.
-Expected Output:
-*
-*
-*
-*
-*
-*
-*****
 
-15. Write a Python program to print alphabet pattern 'T'.
-Expected Output:
-*****
- *
- *
- *
- *
- *
- *
+
 
 16. Write a Python program to print alphabet pattern 'U'.
 Expected Output:
@@ -402,12 +378,104 @@ included) where each digit of a number is an even number. The numbers
 obtained should be printed in a comma-separated sequence.
 """
 
-def all_digits_even(num):
-    # Check if all digits of a number are even
-    return all(int(digit) % 2 == 0 for digit in str(num))
+# items = []
 
-def even_numbers():
-    even_nums = [str(num) for num in range(100, 401) if all_digits_even(num)]
-    return ', '.join(even_nums)
+# for i in range(100, 401):
 
-print(even_numbers())
+#     s = str(i)
+#     if (int(s[0]) % 2 == 0) and (int(s[1]) % 2 == 0) and (int(s[2]) % 2 == 0):
+    
+#         items.append(s)
+
+# print(",".join(items)) 
+
+
+"""
+12. Write a Python program to check the validity of password input by users
+Validation :
+ At least 1 letter between [a-z] and 1 letter between [A-Z].
+ At least 1 number between [0-9].
+ At least 1 character from [$#@].
+ Minimum length 6 characters.
+ Maximum length 16 characters.
+
+
+"""
+# # Import the 're' module for regular expressions
+# import re
+
+# # Prompt the user to input a password and store it in the variable 'p'
+# p = input("Input your password")
+
+# # Set 'x' to True to enter the while loop
+# x = True
+
+# # Start a while loop that continues until 'x' is True
+# while x:  
+#     # Check conditions for a valid password:
+#     # Password length should be between 6 and 12 characters
+#     if (len(p) < 6 or len(p) > 12):
+#         break
+#     # Password should contain at least one lowercase letter
+#     elif not re.search("[a-z]", p):
+#         break
+#     # Password should contain at least one digit
+#     elif not re.search("[0-9]", p):
+#         break
+#     # Password should contain at least one uppercase letter
+#     elif not re.search("[A-Z]", p):
+#         break
+#     # Password should contain at least one special character among '$', '#', '@'
+#     elif not re.search("[$#@]", p):
+#         break
+#     # Password should not contain any whitespace character
+#     elif re.search("\s", p):
+#         break
+#     else:
+#         # If all conditions are met, print "Valid Password" and set 'x' to False to exit the loop
+#         print("Valid Password")
+#         x = False
+#         break
+
+# # If 'x' remains True, print "Not a Valid Password"
+# if x:
+#     print("Not a Valid Password")
+
+"""
+14. Write a Python program to print alphabet pattern 'L'.
+Expected Output:
+*
+*
+*
+*
+*
+*
+*****
+"""
+
+# for i in range(5):
+#         print('*')
+
+# print('*' * 4)
+
+
+
+"""
+15. Write a Python program to print alphabet pattern 'T'.
+Expected Output:
+*****
+ *
+ *
+ *
+ *
+ *
+ *
+
+"""
+
+# for i in range(5):
+#         if i == 0:
+#             print('*' * 5)
+#         else:
+#             print(' ' * (5 // 2) + '*')
+
