@@ -10,127 +10,6 @@ Problem Statements
 
 
 
-
-
-
-
-
-
-
-
-
-21. Write a Python program to sum of two given integers. However, if the sum is
-between 15 to 20 it will return 20.
-
-22. Write a Python program to check a string represent an integer or not.
-Expected Output:
-Input a string: Python
-The string is not an integer.
-
-23. Write a Python program to check a triangle is equilateral, isosceles or
-scalene.
-Note :
-An equilateral triangle is a triangle in which all three sides are equal.
-A scalene triangle is a triangle that has three unequal sides.
-An isosceles triangle is a triangle with (at least) two equal sides.
-Expected Output:
-Input lengths of the triangle sides:
-x: 6
-y: 8
-z: 12
-Scalene triangle
-
-24. Write a Python program that reads two integers representing a month and
-day and prints the season for that month and day.
-Expected Output:
-Input the month (e.g. January, February etc.): july
-Input the day: 31
-Season is autumn
-
-25. Write a Python program to display astrological sign for given date of birth.
-Expected Output:
-Input birthday: 15
-Input month of birth (e.g. march, julyetc): may
-Your Astrological sign is : Taurus
-
-26. Write a Python program to display the sign of the Chinese Zodiac for given
-year in which you were born.
-Expected Output:
-Input your birth year: 1973
-Your Zodiac sign : Ox
-
-27. Write a Python program to find the median of three values.
-Expected Output:
-Input first number: 15
-Input second number: 26
-Input third number: 29
-The median is 26.0
-
-28. Write a Python program to get next day of a given date.
-Expected Output:
-Input a year: 2016
-Input a month [1-12]: 08
-Input a day [1-31]: 23
-The next date is [yyyy-mm-dd] 2016-8-24
-
-29. Write a Python program to calculate the sum and average of n integer
-numbers (input from the user). Input 0 to finish.
-
-30. Write a Python program to create the multiplication table (from 1 to 10) of a
-number.
-Expected Output:
-Input a number: 6
-6 x 1 = 6
-6 x 2 = 12
-6 x 3 = 18
-6 x 4 = 24
-6 x 5 = 30
-6 x 6 = 36
-6 x 7 = 42
-6 x 8 = 48
-6 x 9 = 54
-6 x 10 = 60
-
-31. Write a Python program to construct the following pattern, using a nested
-loop number.
-Expected Output:
-1
-22
-333
-4444
-55555
-666666
-7777777
-88888888
-999999999
-
-32. Write a program to display following pattern
-*
-* *
-* * *
-* * * *
-
-33. Write a program to display following pattern
-0
-0 1
- 0 1 2
- 0 1 2 3
-
-34. Write a program to display following pattern
-* * * * * *
-* * * * *
-* * * *
-* * *
-* *
-*
-
-35. Write a program to display following pattern
-0 1 2 3 4 5
-0 1 2 3 4
-0 1 2 3
-0 1 2
-0 1
-0
 Note:
 [Every student of each Batch should solve minimum 7 problem statements]
 """
@@ -275,6 +154,24 @@ comma separated sequence.
 Sample Data : 0100,0011,1010,1001,1100,1001
 Expected Output : 1010
 """
+# # Create an empty list named 'items'
+# items = []
+
+# # Take user input and split it into a list of strings using ',' as the delimiter
+# num = [x for x in input().split(',')]
+
+# # Iterate through each element 'p' in the 'num' list
+# for p in num:
+#     # Convert the binary string 'p' to its decimal equivalent 'x'
+#     x = int(p, 2)
+    
+#     # Check if 'x' is divisible by 5 (i.e., when divided by 5 there's no remainder)
+#     if not x % 5:
+#         # If 'x' is divisible by 5, add the binary string 'p' to the 'items' list
+#         items.append(p)
+
+# # Join the elements in the 'items' list separated by ',' and print the result
+# print(','.join(items))
 
 """
 11. Write a Python program that accepts a string and calculate the number of
@@ -357,56 +254,6 @@ obtained should be printed in a comma-separated sequence.
 # print(",".join(items)) 
 
 
-"""
-12. Write a Python program to check the validity of password input by users
-Validation :
- At least 1 letter between [a-z] and 1 letter between [A-Z].
- At least 1 number between [0-9].
- At least 1 character from [$#@].
- Minimum length 6 characters.
- Maximum length 16 characters.
-
-
-"""
-# # Import the 're' module for regular expressions
-# import re
-
-# # Prompt the user to input a password and store it in the variable 'p'
-# p = input("Input your password")
-
-# # Set 'x' to True to enter the while loop
-# x = True
-
-# # Start a while loop that continues until 'x' is True
-# while x:  
-#     # Check conditions for a valid password:
-#     # Password length should be between 6 and 12 characters
-#     if (len(p) < 6 or len(p) > 12):
-#         break
-#     # Password should contain at least one lowercase letter
-#     elif not re.search("[a-z]", p):
-#         break
-#     # Password should contain at least one digit
-#     elif not re.search("[0-9]", p):
-#         break
-#     # Password should contain at least one uppercase letter
-#     elif not re.search("[A-Z]", p):
-#         break
-#     # Password should contain at least one special character among '$', '#', '@'
-#     elif not re.search("[$#@]", p):
-#         break
-#     # Password should not contain any whitespace character
-#     elif re.search("\s", p):
-#         break
-#     else:
-#         # If all conditions are met, print "Valid Password" and set 'x' to False to exit the loop
-#         print("Valid Password")
-#         x = False
-#         break
-
-# # If 'x' remains True, print "Not a Valid Password"
-# if x:
-#     print("Not a Valid Password")
 
 """
 14. Write a Python program to print alphabet pattern 'L'.
@@ -558,3 +405,367 @@ No. of days: 28/29 days
 #     print("No. of days: 31 days")  # Display the number of days for months having 31 days
 # else:
 #     print("Wrong month name")  # If the entered month name doesn't match any of the above conditions, display an error message 
+
+
+"""
+21. Write a Python program to sum of two given integers. However, if the sum is
+between 15 to 20 it will return 20.
+"""
+
+# def sum(x, y):
+#     sum = x + y
+#     if sum in range(15, 20):
+#         return 20
+#     else:
+#         return sum
+    
+# print(sum(10, 6))
+# print(sum(10, 2))
+# print(sum(10, 12))
+
+"""
+22. Write a Python program to check a string represent an integer or not.
+Expected Output:
+Input a string: Python
+The string is not an integer.
+"""
+# # Request input from the user to input a string and assign it to the variable 'text'
+# text = input("Input a string: ")
+
+# # Remove leading and trailing whitespaces from the input string using the 'strip()' function
+# text = text.strip()
+
+# # Check if the length of the cleaned text is less than 1
+# if len(text) < 1:
+#     print("Input a valid text")  # If the text length is less than 1, display a message asking for valid input
+# else:
+#     # Check if all characters in the cleaned text are digits (0-9), indicating an integer
+#     if all(text[i] in "0123456789" for i in range(len(text))):
+#         print("The string is an integer.")  # If all characters are digits, display a message indicating an integer
+#     # Check if the text starts with a '+' or '-' and all subsequent characters are digits
+#     elif (text[0] in "+-") and all(text[i] in "0123456789" for i in range(1, len(text))):
+#         print("The string is an integer.")  # If the conditions for a signed integer are met, display an integer message
+#     else:
+#         print("The string is not an integer.")  # If none of the conditions are met, display a non-integer message 
+
+"""
+23. Write a Python program to check a triangle is equilateral, isosceles or
+scalene.
+Note :
+An equilateral triangle is a triangle in which all three sides are equal.
+A scalene triangle is a triangle that has three unequal sides.
+An isosceles triangle is a triangle with (at least) two equal sides.
+Expected Output:
+Input lengths of the triangle sides:
+x: 6
+y: 8
+z: 12
+Scalene triangle
+"""
+
+# print("Input lengths of the triangle sides: ")
+# x = int(input("x: "))
+# y = int(input("y: "))
+# z = int(input("z: "))
+
+# if x == y == z:
+#     print("Equilateral triangle")
+# elif x == y or y == z or z == x:
+#     print("Isosceles triangle")
+# else:
+#     print("Scalene triangle") 
+
+"""
+24. Write a Python program that reads two integers representing a month and
+day and prints the season for that month and day.
+Expected Output:
+Input the month (e.g. January, February etc.): july
+Input the day: 31
+Season is autumn
+"""
+
+# # Request input from the user for the name of the month and assign it to the variable 'month'
+# month = input("Input the month (e.g. January, February etc.): ")
+
+# day = int(input("Input the day: "))
+
+
+# if month in ('January', 'February', 'March'):
+#     season = 'winter'
+# elif month in ('April', 'May', 'June'):
+#     season = 'spring'
+# elif month in ('July', 'August', 'September'):
+#     season = 'summer'
+# else:
+#     season = 'autumn'
+
+# if (month == 'March') and (day > 19):
+#     season = 'spring'
+# elif (month == 'June') and (day > 20):
+#     season = 'summer'
+# elif (month == 'September') and (day > 21):
+#     season = 'autumn'
+# elif (month == 'December') and (day > 20):
+#     season = 'winter'
+
+# print("Season is", season) 
+
+
+"""
+25. Write a Python program to display astrological sign for given date of birth.
+Expected Output:
+Input birthday: 15
+Input month of birth (e.g. march, julyetc): may
+Your Astrological sign is : Taurus
+"""
+
+# # Request input from the user for the day of birth and convert it to an integer, assigning it to the variable 'day'
+# day = int(input("Input birthday: "))
+
+# month = input("Input month of birth (e.g. march, july etc): ")
+
+
+# # Check for December and assign the astrological sign as 'Sagittarius' if the day is less than 22, else 'Capricorn'
+# if month == 'december':
+#     astro_sign = 'Sagittarius' if (day < 22) else 'Capricorn'
+# elif month == 'january':
+#     astro_sign = 'Capricorn' if (day < 20) else 'Aquarius'
+# elif month == 'february':
+#     astro_sign = 'Aquarius' if (day < 19) else 'Pisces'
+# elif month == 'march':
+#     astro_sign = 'Pisces' if (day < 21) else 'Aries'
+# elif month == 'april':
+#     astro_sign = 'Aries' if (day < 20) else 'Taurus'
+# elif month == 'may':
+#     astro_sign = 'Taurus' if (day < 21) else 'Gemini'
+# elif month == 'june':
+#     astro_sign = 'Gemini' if (day < 21) else 'Cancer'
+# elif month == 'july':
+#     astro_sign = 'Cancer' if (day < 23) else 'Leo'
+# elif month == 'august':
+#     astro_sign = 'Leo' if (day < 23) else 'Virgo'
+# elif month == 'september':
+#     astro_sign = 'Virgo' if (day < 23) else 'Libra'
+# elif month == 'october':
+#     astro_sign = 'Libra' if (day < 23) else 'Scorpio'
+# elif month == 'november':
+#     astro_sign = 'Scorpio' if (day < 22) else 'Sagittarius'
+
+# print("Your Astrological sign is :", astro_sign) 
+
+"""
+
+26. Write a Python program to display the sign of the Chinese Zodiac for given
+year in which you were born.
+Expected Output:
+Input your birth year: 1973
+Your Zodiac sign : Ox
+
+"""
+
+# # Request input from the user for the birth year and convert it to an integer, assigning it to the variable 'year'
+# year = int(input("Input your birth year: "))
+
+# # Determine the Chinese zodiac sign based on the provided birth year
+
+# # Check if the year corresponds to the Chinese zodiac sign 'Dragon'
+# if (year - 2000) % 12 == 0:
+#     sign = 'Dragon'
+# elif (year - 2000) % 12 == 1:
+#     sign = 'Snake'
+# elif (year - 2000) % 12 == 2:
+#     sign = 'Horse'
+# elif (year - 2000) % 12 == 3:
+#     sign = 'Sheep'
+# elif (year - 2000) % 12 == 4:
+#     sign = 'Monkey'
+# elif (year - 2000) % 12 == 5:
+#     sign = 'Rooster'
+# elif (year - 2000) % 12 == 6:
+#     sign = 'Dog'
+# elif (year - 2000) % 12 == 7:
+#     sign = 'Pig'
+# elif (year - 2000) % 12 == 8:
+#     sign = 'Rat'
+# elif (year - 2000) % 12 == 9:
+#     sign = 'Ox'
+# elif (year - 2000) % 12 == 10:
+#     sign = 'Tiger'
+# else:
+#     sign = 'Hare'
+
+# print("Your Zodiac sign :", sign) 
+
+
+"""
+27. Write a Python program to find the median of three values.
+Expected Output:
+Input first number: 15
+Input second number: 26
+Input third number: 29
+The median is 26.0
+
+"""
+
+# a = float(input("Input first number: "))
+# b = float(input("Input second number: "))
+# c = float(input("Input third number: "))
+
+# if a > b:
+#     if a < c:
+#         median = a
+#     elif b > c:
+#         median = b
+#     else:
+#         median = c
+# else:
+#     if a > c:
+#         median = a
+#     elif b < c:
+#         median = b
+#     else:
+#         median = c
+# print("The median is", median)
+
+"""
+28. Write a Python program to get next day of a given date.
+Expected Output:
+Input a year: 2016
+Input a month [1-12]: 08
+Input a day [1-31]: 23
+The next date is [yyyy-mm-dd] 2016-8-24
+"""
+# import datetime
+
+# def get_next_day(year, month, day):
+#     input_date = datetime.date(year, month, day)
+#     next_day = input_date + datetime.timedelta(days=1)
+#     return next_day
+
+# def main():
+#     year = int(input("Input a year: "))
+#     month = int(input("Input a month [1-12]: "))
+#     day = int(input("Input a day [1-31]: "))
+
+#     next_day = get_next_day(year, month, day)
+#     print("The next date is [yyyy-mm-dd]", next_day)
+
+# if __name__ == "__main__":
+#     main()
+
+"""
+
+29. Write a Python program to calculate the sum and average of n integer
+numbers (input from the user). Input 0 to finish.
+"""
+
+print("Input some integers to calculate their sum and average. Input 0 to exit.")
+
+# count = 0
+# sum = 0.0
+# number = 1
+
+# while number != 0:
+#     number = int(input(""))
+#     sum = sum + number
+#     count += 1
+# if count == 0:
+#     print("Input some numbers")
+# else:
+#     print("Average and Sum of the above numbers are: ", sum / (count-1), sum)
+
+"""
+30. Write a Python program to create the multiplication table (from 1 to 10) of a
+number.
+Expected Output:
+Input a number: 6
+6 x 1 = 6
+6 x 2 = 12
+6 x 3 = 18
+6 x 4 = 24
+6 x 5 = 30
+6 x 6 = 36
+6 x 7 = 42
+6 x 8 = 48
+6 x 9 = 54
+6 x 10 = 60
+"""	
+
+# Prompt the user to input a number and convert it to an integer, assigning it to the variable 'n'
+# n = int(input("Input a number: "))
+# for i in range(1, 11):
+#     print(n, 'x', i, '=', n * i)
+   
+     
+"""
+31. Write a Python program to construct the following pattern, using a nested
+loop number.
+Expected Output:
+1
+22
+333
+4444
+55555
+666666
+7777777
+88888888
+999999999     
+"""
+
+# for i in range(10):
+#     print(str(i) * i)
+	
+"""
+32. Write a program to display following pattern
+*
+* *
+* * *
+* * * *
+"""
+# rows = 4
+# for i in range(1, rows + 1):
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     print()
+
+"""
+33. Write a program to display following pattern
+0
+0 1
+0 1 2
+0 1 2 3
+"""
+# n = 4
+# for i in range(1, n + 1):
+#     for j in range(i):
+#         print(j, end=" ")
+#     print()
+
+"""
+34. Write a program to display following pattern
+* * * * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+"""
+# rows = 6
+# for i in range(rows, 0, -1):
+#     for j in range(0, i):
+#         print("*", end=" ")
+#     print()
+
+"""
+35. Write a program to display following pattern
+0 1 2 3 4 5
+0 1 2 3 4
+0 1 2 3
+0 1 2
+0 1
+0
+"""
+# for i in range(6):
+#     for j in range(6-i):
+#         print(j, end=' ')
+#     print()
